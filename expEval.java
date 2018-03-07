@@ -8,9 +8,6 @@ public final class expEval{
 		//assuming rule of "a + b" for addition and "a - b" for subtraction.
 		//similarly, division will be a / b and will return an int for simplicity.
 		
-
-
-		
 		String[] token = (new String(args[0])).toString().split(" ");//get string input from console delimited by space
 
 		Stack<Integer> st = new Stack<Integer>();
