@@ -14,4 +14,4 @@ open a terminal inside the folder "ExpressionEvaluator" and run ```java expEval 
 
 ex: ```java expEval "+ 2 3"```
 
-*note: use CMD/Command Prompt for Windows OS and Terminal/Bash for Mac OS
+### note: use CMD/Command Prompt for Windows OS and Terminal/Bash for Mac OS
