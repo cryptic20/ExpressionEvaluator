@@ -4,10 +4,10 @@ import java.util.Stack;
 public final class expEval{
 
 	public static void main(String[]args){
-		//assuming the rule <operator> <expression> <expression> and all string input are valid statements
-		//assuming rule of "a + b" for addition and "a - b" for subtraction
-		//similarly, division will be a / b and will return an int simplicity
-		//
+		//assuming the rule <operator> <expression> <expression> and all string input are valid statements.
+		//assuming rule of "a + b" for addition and "a - b" for subtraction.
+		//similarly, division will be a / b and will return an int for simplicity.
+		
 
 
 		
