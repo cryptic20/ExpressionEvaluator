@@ -8,4 +8,4 @@ make sure java is installed in the system.
 Clone the repo
 open a terminal on the directory where repo was cloned and run ```java "your string expression"```
 
-ex: ```java expEval "+ 2 3"
+ex: ```java expEval "+ 2 3"```
