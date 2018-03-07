@@ -1,4 +1,4 @@
-# ExpressionEvaluator
+# Expression Evaluator
 Button, Inc. Coding Challenge. Implementing an Expression Evaluator
 
 
