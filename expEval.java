@@ -6,7 +6,8 @@ public final class expEval{
 	public static void main(String[]args){
 		//assuming the rule <operator> <expression> <expression> and all string input are valid statements
 		//assuming rule of "a + b" for addition and "a - b" for subtraction
-		//similarly, division will be a / b and will return an int simplicity/
+		//similarly, division will be a / b and will return an int simplicity
+		//
 
 
 		
@@ -14,7 +15,7 @@ public final class expEval{
 
 		Stack<Integer> st = new Stack<Integer>();
 
-        //for loop will start at the end for reverse polish notation via stack. 
+        //for loop will start at the end of array for reverse polish notation via stack. 
         for(int i = token.length-1; i>=0 ; i--) {
             switch(token[i]) {
 
