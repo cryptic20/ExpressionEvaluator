@@ -10,7 +10,7 @@ public final class expEval{
 		
 		String[] token = (new String(args[0])).split(" ");//get string input from console delimited by space
 
-		Stack<Integer> st = new Stack<Integer>();
+		Stack<Integer> stack = new Stack<Integer>();
 
         //for loop will start at the end of array for reverse polish notation via stack. 
         for(int i = token.length-1; i>=0 ; i--) {
@@ -20,22 +20,26 @@ public final class expEval{
            	pop the previous expression and performs the 
            	specified operator and the result will be push into the stack again*/
             case "+":
-                st.push(st.pop() + st.pop()); //addition a + b
+                st.push(stack.pop() + stack.pop()); //addition a + b
                 break;
             case "-":
-                st.push(st.pop() - st.pop()); //subtraction a - b
+                st.push(stack.pop() - stack.pop()); //subtraction a - b
                 break;
             case "*":
-                st.push(st.pop() * st.pop()); //multiplication a * b
+                st.push(stack.pop() * stack.pop()); //multiplication a * b
                 break;
             case "/":
-                st.push(st.pop()/st.pop()); //division a/b
+                st.push(stack.pop()/stack.pop()); //division a/b
                 break;
             default:
                 st.push(Integer.parseInt(token[i])); //will push any expression
                 break;
             }
         }
-        System.out.println("result: "+ st.pop()); //return the result after performing all necessary operations
+        if(!stack.isEmpty()){
+            System.out.println("result: "+ st.pop()); //return the result after performing all necessary operations
+        }else{
+            System.out.println("Error! Invalid expression!")
+        }
     }
 }
